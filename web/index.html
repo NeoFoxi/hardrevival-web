@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HardRevival</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/src/menue/index.css">
+    <link rel="stylesheet" href="/src/footer/index.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+
+            <h1 class="glitch" data-text="ÜBERLEBE. TÖTE. BELEBE.">ÜBERLEBE. TÖTE. BELEBE.</h1>
+            <p class="hero-subtitle">Das ultimative PvP-Hardcore-Erlebnis. Vertraue niemandem, kämpfe ums Überleben und sammle die Köpfe deiner gefallenen Feinde.</p>
+            
+            <div class="hero-actions">
+                <a href="leaderboard/" class="btn btn-primary"><i class="fa-solid fa-trophy"></i>Bestenliste</a>
+                <a href="statistics/" class="btn btn-secondary"><i class="fa-solid fa-chart-line"></i>Statistiken</a>
+                
+            </div>
+
+            <div class="hero-scroll-hint">
+                <span>Entdecke mehr</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="features" id="features">
+        <div class="section-title">
+            <h2>Spiel-Features</h2>
+            <p>Jede Mechanik ist für maximale Spannung und epischen Content ausgelegt.</p>
+        </div>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-khanda"></i></div>
+                <h3>Gnadenloses PvP</h3>
+                <p>Jede Begegnung könnte deine letzte sein. Töte oder werde getötet in einer Umgebung mit hohen Einsätzen, in der jeder YouTuber um die ultimative Vorherrschaft kämpft.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-shield-heart" style="color: #10b981;"></i></div>
+                <h3>Life Saver</h3>
+                <p>Ein seltener Gegenstand, den du im Inventar tragen kannst. Aktiviere ihn von überall – wenn du stirbst, wird der Life Saver verbraucht, anstatt deines letzten Lebens. Dein Sicherheitsnetz im Chaos.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-skull" style="color: #f43f5e;"></i></div>
+                <h3>Todes-Struktur</h3>
+                <p>Wenn ein Spieler im Kampf ohne Life Saver stirbt, erscheint an seinem Todesort eine makabre Struktur, die seinen Kopf als Trophäe hinterlässt.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-heart-pulse" style="color: #6366f1;"></i></div>
+                <h3>Wiederbelebungs-Ritual</h3>
+                <p>Verwende den abgetrennten Kopf eines gefallenen Spielers, um mit einem speziellen Mechanismus zu interagieren und ihn wieder zum Leben zu erwecken. Belebe deine Kameraden wieder.</p>
+            </div>
+        </div>
+    </section>
+
+    <a href="/discord/" target="_blank" class="discord-float" id="discordFloat">
+        <div class="discord-float-icon">
+            <i class="fa-brands fa-discord"></i>
+        </div>
+        <div class="discord-float-info">
+            <span class="discord-float-label">Community</span>
+            <span class="discord-float-status">
+                <span class="status-dot pulse"></span>
+                <span class="online-number" id="onlineCountFloat">0</span>
+                <span>online</span>
+            </span>
+        </div>
+    </a>
+
+    <script src="/src/menue/index.js"></script>
+    <script src="/src/footer/index.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

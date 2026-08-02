@@ -1,0 +1,170 @@
+:root {
+    --bg-dark: #09090b;
+    --bg-card: #18181b;
+    --bg-elevated: #27272a;
+    --text-primary: #f8fafc;
+    --text-secondary: #a1a1aa;
+    --accent-red: #ef4444;
+    --accent-red-hover: #dc2626;
+    --glow-red: rgba(239, 68, 68, 0.5);
+    
+    --font-outfit: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-outfit);
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--bg-elevated);
+    border-radius: 4px;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(circle at center, #1f0505 0%, #09090b 70%);
+    overflow: hidden;
+}
+
+.rules-hero {
+    height: 60vh;
+    min-height: 400px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><circle cx="1" cy="1" r="1" fill="rgba(255,255,255,0.05)"/></svg>');
+    opacity: 0.5;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+    padding: 0 2rem;
+    animation: slideUp 1s ease-out forwards;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--accent-red);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+.glitch {
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+    color: white;
+    text-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+/* === PDF-ANSICHT (ersetzt die alten Rule-Cards) === */
+.rules-list {
+    padding: 3rem 2rem 5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.pdf-wrapper iframe {
+    width: 100%;
+    height: 75vh;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: var(--bg-card);
+    display: block;
+}
+
+.pdf-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.pdf-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.8rem 2rem;
+    background: var(--accent-red);
+    color: #fff;
+    font-family: var(--font-outfit);
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.pdf-btn:hover {
+    background: var(--accent-red-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px var(--glow-red);
+}
+
+.pdf-btn-outline {
+    background: transparent;
+    border: 1px solid var(--accent-red);
+    color: var(--accent-red);
+}
+
+.pdf-btn-outline:hover {
+    background: rgba(239, 68, 68, 0.1);
+}
+
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .glitch { font-size: 3rem; }
+    .pdf-wrapper iframe { height: 60vh; }
+}

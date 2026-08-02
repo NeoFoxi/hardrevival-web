@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regeln - HardRevival</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/src/menue/index.css">
+    <link rel="stylesheet" href="/src/footer/index.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <section class="hero rules-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="badge"><i class="fa-solid fa-file-pdf"></i> Server-Regeln</span>
+            <h1 class="glitch" data-text="REGELN">REGELN</h1>
+            <p class="hero-subtitle">Hier kannst du die offiziellen Server-Regeln als PDF einsehen oder herunterladen.</p>
+        </div>
+    </section>
+
+    <section class="rules-list">
+        <div class="pdf-wrapper">
+            <iframe src="/rules.pdf#toolbar=1" title="Server-Regeln PDF"></iframe>
+            <div class="pdf-actions">
+                <a href="/rules.pdf" download class="pdf-btn">
+                    <i class="fa-solid fa-download"></i> PDF herunterladen
+                </a>
+                <a href="/rules.pdf" target="_blank" class="pdf-btn pdf-btn-outline">
+                    <i class="fa-solid fa-external-link-alt"></i> In neuem Tab öffnen
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="/src/menue/index.js"></script>
+    <script src="/src/footer/index.js"></script>
+</body>
+</html>

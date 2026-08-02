@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistiken | HardRevival</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/src/menue/index.css">
+    <link rel="stylesheet" href="/src/footer/index.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <div class="dashboard-container">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-resize-handle" id="sidebarResizeHandle"></div>
+            <div class="search-container">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Spieler suchen..." autocomplete="off">
+            </div>
+
+            <div class="player-list-container">
+                <ul id="playerList" class="player-list">
+                </ul>
+            </div>
+            
+            <div class="sidebar-footer">
+                <div class="total-players-badge">
+                    <i class="fa-solid fa-users"></i>
+                    <span id="totalPlayersCount">0</span> Spieler insgesamt
+                </div>
+            </div>
+        </aside>
+
+        <button class="sidebar-toggle-btn" id="sidebarToggleBtn" aria-label="Spielerliste umschalten">
+            <i class="fa-solid fa-users"></i>
+        </button>
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <main class="main-content">
+            <header class="top-nav-dashboard">
+                <div class="nav-title">
+                    <h1 id="selectedPlayerName">Spieler auswählen</h1>
+                </div>
+                <div class="nav-actions">
+                    <button class="icon-btn" id="refreshBtn" title="Daten aktualisieren">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div class="content-wrapper">
+                <div id="stateIndicator" class="state-indicator">
+                    <div class="icon-container is-pulse">
+                        <i class="fa-solid fa-arrow-pointer"></i>
+                    </div>
+                    <h3>Kein Spieler ausgewählt</h3>
+                    <p>Wähle einen Spieler aus der Seitenleiste, um seine Statistiken anzuzeigen.</p>
+                </div>
+
+                <div id="statsDashboard" class="stats-dashboard hidden">
+                    <div class="stat-card card-kills">
+                        <div class="card-header">
+                            <div class="header-icon"><i class="fa-solid fa-crosshairs"></i></div>
+                            <div class="header-title">Getötete Spieler</div>
+                            <div class="header-value" id="valKills">0</div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Ziel-Liste:</h4>
+                            <ul id="listKills" class="detail-list"></ul>
+                        </div>
+                    </div>
+
+                    <div class="stat-card card-revives">
+                        <div class="card-header">
+                            <div class="header-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                            <div class="header-title">Wiederbelebte Spieler</div>
+                            <div class="header-value" id="valRevives">0</div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Helden-Liste:</h4>
+                            <ul id="listRevives" class="detail-list"></ul>
+                        </div>
+                    </div>
+
+                    <div class="stat-card card-deaths">
+                        <div class="card-header">
+                            <div class="header-icon"><i class="fa-solid fa-skull"></i></div>
+                            <div class="header-title">Getötet von</div>
+                            <div class="header-value" id="valDeaths">0</div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Henker-Liste:</h4>
+                            <ul id="listDeaths" class="detail-list"></ul>
+                        </div>
+                    </div>
+
+                    <div class="stat-card card-revived-by">
+                        <div class="card-header">
+                            <div class="header-icon"><i class="fa-solid fa-hand-holding-medical"></i></div>
+                            <div class="header-title">Wiederbelebt von</div>
+                            <div class="header-value" id="valRevivedBy">0</div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Lebensretter:</h4>
+                            <ul id="listRevivedBy" class="detail-list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/src/menue/index.js"></script>
+    <script src="/src/footer/index.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+</html>

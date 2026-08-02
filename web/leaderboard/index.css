@@ -1,0 +1,146 @@
+.leaderboard-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 8rem 2rem 4rem 2rem;
+    min-height: 100vh;
+}
+
+.leaderboard-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.page-subtitle {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: var(--accent-red);
+    font-size: 2rem;
+    padding: 4rem 0;
+}
+
+.loader p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.table-wrapper {
+    background: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    animation: slideUp 0.5s ease-out;
+}
+
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.leaderboard-table th {
+    background: rgba(0,0,0,0.3);
+    padding: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.leaderboard-table td {
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    vertical-align: middle;
+}
+
+.leaderboard-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.leaderboard-table tbody tr:hover {
+    background: rgba(255,255,255,0.02);
+}
+
+.leaderboard-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.rank-col {
+    width: 80px;
+    text-align: center;
+}
+
+.stat-col {
+    width: 120px;
+    text-align: center;
+}
+
+.rank-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--bg-elevated);
+    font-weight: 800;
+    color: var(--text-secondary);
+}
+
+.rank-1 .rank-badge {
+    background: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+    box-shadow: 0 0 15px rgba(245, 158, 11, 0.3);
+}
+
+.rank-2 .rank-badge {
+    background: rgba(156, 163, 175, 0.15);
+    color: #cbd5e1;
+}
+
+.rank-3 .rank-badge {
+    background: rgba(180, 83, 9, 0.15);
+    color: #b45309;
+}
+
+.player-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.stat-value {
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.kills-value { color: #ef4444; }
+.revives-value { color: #10b981; }
+.deaths-value { color: #a1a1aa; }

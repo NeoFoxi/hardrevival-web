@@ -1,0 +1,97 @@
+/* === REDIRECT COMPONENT === */
+
+.redirect-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.redirect-icon-wrapper {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    animation: redirectPulse 1.5s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+
+.redirect-icon-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.redirect-icon-wrapper i {
+    font-size: 3.5rem;
+}
+
+.redirect-container h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.redirect-container p {
+    color: #A1A1AA;
+    max-width: 400px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.redirect-container .redirect-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.redirect-container .redirect-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.redirect-container .redirect-link i {
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+@keyframes redirectPulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.08); opacity: 0.75; }
+}
+
+/* Brand-specific colors */
+.redirect-icon-wrapper.brand-discord i { color: #5865F2; }
+.redirect-icon-wrapper.brand-patreon i { color: #FF424D; }
+.redirect-icon-wrapper.brand-github i { color: #f0f6fc; }
+.redirect-icon-wrapper.brand-youtube i { color: #FF0000; }
+.redirect-icon-wrapper.brand-subscribe i { color: #FF424D; }
+
+@media (max-width: 480px) {
+    .redirect-icon-wrapper {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+    }
+    .redirect-icon-wrapper i {
+        font-size: 2.5rem;
+    }
+    .redirect-container h1 {
+        font-size: 1.25rem;
+    }
+}

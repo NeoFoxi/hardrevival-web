@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestenliste | HardRevival</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/src/menue/index.css">
+    <link rel="stylesheet" href="/src/footer/index.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <main class="leaderboard-container">
+        <div class="leaderboard-header">
+            <h1 class="page-title"><i class="fa-solid fa-trophy" style="color: #f59e0b;"></i> Globale Rangliste</h1>
+            <p class="page-subtitle">Die Top-Spieler, gewertet nach dem vergossenen Blut.</p>
+        </div>
+
+        <div id="loader" class="loader">
+            <i class="fa-solid fa-spinner fa-spin"></i>
+            <p>Massaker-Daten werden geladen...</p>
+        </div>
+
+        <div class="table-wrapper hidden" id="tableWrapper">
+            <table class="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th class="rank-col">Rang</th>
+                        <th>Spieler</th>
+                        <th class="stat-col"><i class="fa-solid fa-crosshairs" style="color: #ef4444;"></i> Kills</th>
+                        <th class="stat-col"><i class="fa-solid fa-heart-pulse" style="color: #10b981;"></i> Belebungen</th>
+                        <th class="stat-col"><i class="fa-solid fa-skull" style="color: #a1a1aa;"></i> Tode</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboardBody">
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="/src/menue/index.js"></script>
+    <script src="/src/footer/index.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+</html>

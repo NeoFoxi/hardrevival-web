@@ -1,0 +1,428 @@
+:root {
+    --bg-dark: #09090b;
+    --bg-card: #18181b;
+    --bg-elevated: #27272a;
+    --text-primary: #f8fafc;
+    --text-secondary: #a1a1aa;
+    --accent-red: #ef4444;
+    --accent-red-hover: #dc2626;
+    --glow-red: rgba(239, 68, 68, 0.5);
+    
+    --discord-bg: #5865F2;
+    --discord-hover: #4752c4;
+    --discord-glow: rgba(88, 101, 242, 0.5);
+    --discord-green: #57F287;
+    
+    --font-outfit: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-outfit);
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--bg-elevated);
+    border-radius: 4px;
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(circle at center, #1f0505 0%, #09090b 70%);
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><circle cx="1" cy="1" r="1" fill="rgba(255,255,255,0.05)"/></svg>');
+    opacity: 0.5;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+    padding: 0 2rem;
+    animation: slideUp 1s ease-out forwards;
+}
+
+.glitch {
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+    color: white;
+    text-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: var(--accent-red);
+    color: white;
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.4);
+}
+
+.btn-primary:hover {
+    background: var(--accent-red-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(239, 68, 68, 0.6);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.btn-patreon {
+    background: #FF424D;
+    color: white;
+    box-shadow: 0 0 20px rgba(255, 66, 77, 0.4);
+}
+
+.btn-patreon:hover {
+    background: #E63945;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 66, 77, 0.6);
+}
+
+.hero-scroll-hint {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.5;
+    animation: float-up 2s ease-in-out infinite;
+}
+
+.hero-scroll-hint i {
+    font-size: 1rem;
+}
+
+@keyframes float-up {
+    0%, 100% { transform: translateY(0); opacity: 0.5; }
+    50% { transform: translateY(8px); opacity: 0.8; }
+}
+
+.discord-float {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(135deg, #5865F2, #4752c4);
+    padding: 10px 18px 10px 12px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 4px 24px rgba(88, 101, 242, 0.4), 0 0 40px rgba(88, 101, 242, 0.15);
+    border: 1px solid rgba(255,255,255,0.12);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+}
+
+.discord-float:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 40px rgba(88, 101, 242, 0.6), 0 0 60px rgba(88, 101, 242, 0.25);
+}
+
+.discord-float:active {
+    transform: scale(0.95);
+}
+
+.discord-float-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9rem;
+    flex-shrink: 0;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.3s ease;
+}
+
+.discord-float:hover .discord-float-icon {
+    transform: rotate(-8deg) scale(1.08);
+}
+
+.discord-float-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.discord-float-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    opacity: 0.75;
+}
+
+.discord-float-status {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.discord-float-status .status-dot {
+    width: 7px;
+    height: 7px;
+    background: var(--discord-green);
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: 0 0 8px var(--discord-green);
+}
+
+.status-dot.pulse {
+    animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+    0%, 100% { box-shadow: 0 0 8px var(--discord-green); }
+    50% { box-shadow: 0 0 16px var(--discord-green), 0 0 30px var(--discord-green); }
+}
+
+.discord-float-status .online-number {
+    font-size: 1rem;
+    font-weight: 800;
+    min-width: 2ch;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+.discord-float {
+    animation: float-in 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0.5s both;
+}
+
+@keyframes float-in {
+    from { opacity: 0; transform: translateY(40px) scale(0.8); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.features {
+    padding: 6rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.section-title h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #fff, #a1a1aa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-title p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 2.5rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at top right, rgba(239, 68, 68, 0.1), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(239, 68, 68, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.feature-card:hover::before {
+    opacity: 1;
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-card p {
+    color: var(--text-secondary);
+    position: relative;
+    z-index: 1;
+    line-height: 1.7;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .glitch { font-size: 3rem; }
+    .hero-actions { flex-direction: column; align-items: center; }
+    
+    .features {
+        padding: 3rem 1.2rem;
+    }
+    .section-title h2 {
+        font-size: 2rem;
+    }
+    .section-title {
+        margin-bottom: 3rem;
+    }
+
+    .discord-float {
+        bottom: 16px;
+        right: 16px;
+        padding: 8px 14px 8px 10px;
+        gap: 10px;
+    }
+    .discord-float-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+    .discord-float-label {
+        font-size: 0.6rem;
+    }
+    .discord-float-status {
+        font-size: 0.75rem;
+    }
+    .discord-float-status .online-number {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .glitch {
+        font-size: 2.2rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .btn {
+        font-size: 0.85rem;
+        padding: 0.8rem 1.5rem;
+    }
+    .hero-content {
+        padding: 0 1.2rem;
+    }
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+    .feature-card {
+        padding: 1.8rem;
+    }
+}
