@@ -55,7 +55,7 @@
     color: var(--text-primary);
 }
 
-.nav-links a.patreon-link {
+.nav-links a.subscribe-link {
     background: #FF424D;
     color: white;
     padding: 0.5rem 1rem;
@@ -66,7 +66,7 @@
     box-shadow: 0 0 12px rgba(255, 66, 77, 0.3);
 }
 
-.nav-links a.patreon-link:hover {
+.nav-links a.subscribe-link:hover {
     background: #E63945;
     color: white;
     transform: translateY(-1px);
@@ -162,7 +162,7 @@
         color: var(--accent-red);
     }
 
-    .nav-links a.patreon-link {
+    .nav-links a.subscribe-link {
         margin-top: 0.5rem;
         justify-content: center;
         padding: 0.8rem 1rem;
