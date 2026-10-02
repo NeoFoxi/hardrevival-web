@@ -82,9 +82,9 @@
 .social-link:hover {
     color: var(--text-primary);
     background: rgba(255, 255, 255, 0.08);
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     border-color: rgba(255, 255, 255, 0.12);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Column headings */
@@ -107,7 +107,7 @@
     width: 28px;
     height: 2px;
     background: var(--accent-red);
-    box-shadow: 0 0 8px var(--glow-red);
+    box-shadow: 0 0 5px var(--glow-red);
     border-radius: 2px;
 }
 
@@ -144,7 +144,7 @@
 
 .footer-links li a:hover {
     color: var(--text-primary);
-    transform: translateX(4px);
+    transform: translateX(2px);
 }
 
 .footer-links li a:hover i {
@@ -181,7 +181,7 @@
 
 /* Scroll animation */
 @keyframes footerSlideUp {
-    from { opacity: 0; transform: translateY(20px); }
+    from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
 

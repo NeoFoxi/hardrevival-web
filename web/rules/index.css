@@ -89,7 +89,7 @@ body {
     text-transform: uppercase;
     position: relative;
     color: white;
-    text-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
+    text-shadow: 0 0 12px rgba(239, 68, 68, 0.3);
     margin-bottom: 1.5rem;
     line-height: 1.1;
 }
@@ -144,8 +144,8 @@ body {
 
 .pdf-btn:hover {
     background: var(--accent-red-hover);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px var(--glow-red);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 12px var(--glow-red);
 }
 
 .pdf-btn-outline {
@@ -160,7 +160,7 @@ body {
 
 
 @keyframes slideUp {
-    from { opacity: 0; transform: translateY(30px); }
+    from { opacity: 0; transform: translateY(16px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
