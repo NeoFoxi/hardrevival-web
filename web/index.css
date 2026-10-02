@@ -158,16 +158,10 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     opacity: 0.5;
-    animation: float-up 2s ease-in-out infinite;
 }
 
 .hero-scroll-hint i {
     font-size: 1rem;
-}
-
-@keyframes float-up {
-    0%, 100% { transform: translateY(0); opacity: 0.5; }
-    50% { transform: translateY(4px); opacity: 0.7; }
 }
 
 .discord-float {
@@ -246,15 +240,6 @@ body {
     border-radius: 50%;
     flex-shrink: 0;
     box-shadow: 0 0 4px var(--discord-green);
-}
-
-.status-dot.pulse {
-    animation: pulse-dot 2s ease-in-out infinite;
-}
-
-@keyframes pulse-dot {
-    0%, 100% { box-shadow: 0 0 4px var(--discord-green); }
-    50% { box-shadow: 0 0 8px var(--discord-green), 0 0 14px var(--discord-green); }
 }
 
 .discord-float-status .online-number {
