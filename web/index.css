@@ -185,7 +185,7 @@ body {
 }
 
 .discord-float:hover {
-    transform: translateY(-2px) scale(1.01);
+    transform: translateY(-1px) scale(1.01);
     box-shadow: 0 6px 24px rgba(88, 101, 242, 0.4), 0 0 36px rgba(88, 101, 242, 0.18);
 }
 
