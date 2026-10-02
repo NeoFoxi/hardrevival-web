@@ -1,0 +1,7 @@
+Contact: mailto:neofoxi@hardrevival.net
+Contact: mailto:m@neofoxi.net
+Contact: mailto:technik.wunder@icloud.com
+Contact: https://neofoxi.net
+Contact: https://github.com/NeoFoxi
+Expires: 2031-09-08T10:09:00.000Z
+Preferred-Languages: de, en

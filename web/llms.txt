@@ -1,0 +1,27 @@
+# HardRevival
+
+> HardRevival is a German Minecraft hardcore PvP server. Players fight for
+> survival with permadeath-style stakes, a rare "Life Saver" item, death
+> structures that drop the victim's head as a trophy, and a revival ritual
+> that can bring fallen players back.
+
+HardRevival is built around high-stakes PvP: every encounter can be your last,
+a Life Saver item can be consumed instead of your final life, and when a player
+dies without one a macabre structure is left behind holding their head.
+Survivors can use a fallen player's head to perform a revival ritual and bring
+teammates back. The site publishes live leaderboards and per-player statistics,
+plus the server rules. The project is run by NeoFoxi.
+
+## Core pages
+- [Home](https://hardrevival.net/): Server overview, game features and community status.
+- [Leaderboard](https://hardrevival.net/leaderboard/): Global ranking by kills, revivals and deaths.
+- [Statistics](https://hardrevival.net/statistics/): Per-player kill, revive and death details.
+- [Rules](https://hardrevival.net/rules/): Server rules.
+
+## Community and profiles
+- [Discord](https://hardrevival.net/discord): Community server and support.
+- [GitHub](https://neofoxi.net/github): Source code and open projects.
+- [Patreon](https://neofoxi.net/patreon): Membership and support.
+
+## Related llms.txt
+- [NeoFoxi llms.txt](https://neofoxi.net/llms.txt): machine-readable index for the developer behind HardRevival.
