@@ -50,7 +50,7 @@
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.3);
     animation: slideUp 0.5s ease-out;
 }
 
@@ -114,7 +114,7 @@
 .rank-1 .rank-badge {
     background: rgba(245, 158, 11, 0.15);
     color: #f59e0b;
-    box-shadow: 0 0 15px rgba(245, 158, 11, 0.3);
+    box-shadow: 0 0 8px rgba(245, 158, 11, 0.2);
 }
 
 .rank-2 .rank-badge {

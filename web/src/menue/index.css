@@ -3,8 +3,8 @@
     top: 0;
     width: 100%;
     background: rgba(9, 9, 11, 0.8);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     z-index: 100;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -63,14 +63,14 @@
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    box-shadow: 0 0 12px rgba(255, 66, 77, 0.3);
+    box-shadow: 0 0 8px rgba(255, 66, 77, 0.2);
 }
 
 .nav-links a.subscribe-link:hover {
     background: #E63945;
     color: white;
     transform: translateY(-1px);
-    box-shadow: 0 4px 16px rgba(255, 66, 77, 0.5);
+    box-shadow: 0 3px 12px rgba(255, 66, 77, 0.35);
 }
 
 .nav-links a.active::after {
@@ -81,7 +81,7 @@
     width: 100%;
     height: 2px;
     background: var(--accent-red);
-    box-shadow: 0 0 10px var(--glow-red);
+    box-shadow: 0 0 6px var(--glow-red);
 }
 
 /* Hamburger toggle button - hidden on wider viewports */
@@ -132,12 +132,12 @@
         width: min(320px, 80vw);
         height: 100vh;
         background: rgba(9, 9, 11, 0.97);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
         flex-direction: column;
         gap: 0;
         padding: 6rem 2rem 2rem;
-        box-shadow: -8px 0 30px rgba(0, 0, 0, 0.6);
+        box-shadow: -6px 0 20px rgba(0, 0, 0, 0.5);
         border-left: 1px solid rgba(255, 255, 255, 0.05);
         transform: translateX(100%);
         transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
