@@ -1,0 +1,20 @@
+{
+  "name": "HardRevival",
+  "url": "https://hardrevival.net",
+  "language": "de",
+  "description": "HardRevival ist ein deutscher Minecraft-Hardcore-PvP-Server mit permadeath-Mechaniken: Der seltene Life-Saver-Gegenstand rettet das letzte Leben, beim Tod ohne Life Saver hinterlässt der Spieler eine Todes-Struktur mit seinem Kopf als Trophäe, und Mitspieler können Gefallene durch ein Wiederbelebungs-Ritual zurück ins Spiel holen.",
+  "summary": "Hardcore-PvP-Minecraft-Server mit Live-Bestenliste, Spielerstatistiken und offenem Regelwerk. Jeder Kampf kann das letzte Leben kosten; Community und Server-Zugang laufen über den Discord-Server. Betreiber ist NeoFoxi.",
+  "dateModified": "2026-10-09",
+  "pages": [
+    { "url": "https://hardrevival.net/", "title": "Server-Übersicht und Spiel-Features" },
+    { "url": "https://hardrevival.net/rules/", "title": "Offizielles Serverregelwerk" },
+    { "url": "https://hardrevival.net/leaderboard/", "title": "Globale Bestenliste" },
+    { "url": "https://hardrevival.net/statistics/", "title": "Spielerstatistiken" }
+  ],
+  "contact": {
+    "general": "neofoxi@hardrevival.net",
+    "technical": "m@neofoxi.net",
+    "security": "https://hardrevival.net/security.txt",
+    "community": "https://discord.gg/6kzaxms5j"
+  }
+}

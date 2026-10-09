@@ -1,0 +1,33 @@
+{
+  "name": "HardRevival",
+  "url": "https://hardrevival.net",
+  "language": "de",
+  "dateModified": "2026-10-09",
+  "faq": [
+    {
+      "question": "Was ist HardRevival?",
+      "answer": "HardRevival ist ein deutscher Minecraft-Hardcore-PvP-Server. Jede Begegnung kann dein letztes Leben kosten: Stirbst du ohne Life Saver, hinterlässt du eine Todes-Struktur mit deinem Kopf als Trophäe – und kannst nur durch ein Wiederbelebungs-Ritual zurückkehren.",
+      "url": "https://hardrevival.net/"
+    },
+    {
+      "question": "Was ist der Life Saver?",
+      "answer": "Der Life Saver ist ein seltener Gegenstand, den du im Inventar tragen kannst. Aktivierst du ihn, wird er beim Tod statt deines letzten Lebens verbraucht – dein Sicherheitsnetz im Hardcore-PvP.",
+      "url": "https://hardrevival.net/"
+    },
+    {
+      "question": "Wie funktioniert das Wiederbelebungs-Ritual?",
+      "answer": "Nach dem Tod eines Spielers erscheint eine Todes-Struktur mit seinem abgetrennten Kopf. Ein Spieler kann diesen Kopf aufnehmen und mit einem speziellen Mechanismus verwenden, um den Gefallenen wieder zum Leben zu erwecken.",
+      "url": "https://hardrevival.net/"
+    },
+    {
+      "question": "Welche Regeln gelten auf HardRevival?",
+      "answer": "Das offizielle Regelwerk umfasst elf Paragraphen zu allgemeinem Verhalten, respektvollem Umgang, Fair Play ohne Hacks und Cheats, PvP- und Chat-Regeln, Aufnahmen, Datenschutz und Strafen. Die vollständigen Regeln findest du unter hardrevival.net/rules – als HTML und als PDF.",
+      "url": "https://hardrevival.net/rules/"
+    },
+    {
+      "question": "Wie kann ich bei HardRevival mitspielen?",
+      "answer": "Du benötigst Minecraft Java Edition (minecraft.net). Über den Discord-Server auf hardrevival.net/discord bekommst du die Server-Adresse, Updates zur Community und Unterstützung vom Serverteam.",
+      "url": "https://hardrevival.net/discord/"
+    }
+  ]
+}

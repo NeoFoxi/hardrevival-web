@@ -1,0 +1,40 @@
+{
+  "name": "HardRevival",
+  "url": "https://hardrevival.net",
+  "language": "de",
+  "type": "game-server",
+  "description": "Deutscher Minecraft-Hardcore-PvP-Server mit permadeath, Life Saver, Todes-Strukturen, Kopf-Trophäen und Wiederbelebungs-Ritual.",
+  "services": [
+    {
+      "name": "Hardcore-PvP-Spielbetrieb",
+      "description": "Permanenter Minecraft-Hardcore-PvP-Server: Jeder Spieler hat begrenzte Leben; der seltene Life-Saver-Gegenstand verhindert einmalig den endgültigen Tod. Kills, Tode und Wiederbelebungen werden automatisch erfasst.",
+      "url": "https://hardrevival.net/"
+    },
+    {
+      "name": "Wiederbelebungs-Ritual",
+      "description": "Gefallene Spieler hinterlassen eine Todes-Struktur mit ihrem Kopf als Trophäe. Mitspieler können über diesen Kopf und einen speziellen Mechanismus den Gefallenen wiederbeleben.",
+      "url": "https://hardrevival.net/"
+    },
+    {
+      "name": "Globale Bestenliste",
+      "description": "Live-Rangliste aller Spieler, gewertet nach Kills, Wiederbelebungen und Toden.",
+      "url": "https://hardrevival.net/leaderboard/"
+    },
+    {
+      "name": "Spielerstatistiken",
+      "description": "Pro-Spieler-Statistiken: getötete Spieler, wiederbelebte Spieler, Tode und Wiederbelebungen durch andere Spieler.",
+      "url": "https://hardrevival.net/statistics/"
+    },
+    {
+      "name": "Serverregelwerk",
+      "description": "Offizielles Regelwerk mit elf Paragraphen zu Fair Play, PvP, Chat, Aufnahmen, Datenschutz und Strafen – als HTML und PDF.",
+      "url": "https://hardrevival.net/rules/"
+    }
+  ],
+  "contact": {
+    "general": "neofoxi@hardrevival.net",
+    "technical": "m@neofoxi.net",
+    "community": "https://discord.gg/6kzaxms5j"
+  },
+  "dateModified": "2026-10-09"
+}

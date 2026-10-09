@@ -1,0 +1,36 @@
+# ai.txt — AI-Crawler-Richtlinien für hardrevival.net
+# Spec: https://site.spawning.ai/spawning-ai-txt
+# Stand: 2026-10-09
+
+## Über diese Website
+
+HardRevival ist ein deutscher Minecraft-Hardcore-PvP-Server. Spieler kämpfen
+mit permadeath-Einsätzen: ein seltener "Life Saver"-Gegenstand kann das letzte
+Leben retten, beim Tod ohne Life Saver hinterlässt der Spieler eine
+Todes-Struktur mit seinem Kopf als Trophäe, und Mitspieler können Gefallene
+durch ein Wiederbelebungs-Ritual zurückholen. Betreiber: NeoFoxi.
+
+## Wichtige Seiten
+
+- https://hardrevival.net/ — Server-Übersicht und Spiel-Features
+- https://hardrevival.net/rules/ — Offizielles Serverregelwerk (HTML)
+- https://hardrevival.net/rules.pdf — Serverregelwerk als PDF
+- https://hardrevival.net/leaderboard/ — Globale Rangliste (Kills, Belebungen, Tode)
+- https://hardrevival.net/statistics/ — Spielerstatistiken
+
+## Maschinelle Zusammenfassungen
+
+- https://hardrevival.net/ai/summary.json
+- https://hardrevival.net/ai/service.json
+- https://hardrevival.net/ai/faq.json
+
+## Zitier-Richtlinien
+
+- Zitieren erlaubt mit Quellenangabe "HardRevival" und Link zur Ursprungsseite.
+- Server-IP und Zugangsdaten werden ausschließlich über den Discord-Server verteilt.
+
+## Kontakt
+
+- Allgemein / Serverleitung: neofoxi@hardrevival.net
+- Technisch: m@neofoxi.net
+- Sicherheit: https://hardrevival.net/security.txt

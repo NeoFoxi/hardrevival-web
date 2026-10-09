@@ -477,3 +477,26 @@ body {
 .stats-dashboard {
     animation: fadeIn 0.5s ease-out forwards;
 }
+
+.stats-seo {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 0;
+}
+
+.stats-seo .page-title {
+    font-family: var(--font-outfit);
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--text-primary);
+    margin-bottom: 0.6rem;
+}
+
+.stats-seo-text {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.stats-seo-text a {
+    color: var(--accent-red);
+}

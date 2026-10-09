@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bestenliste | HardRevival</title>
+    <meta name="description" content="Die globale HardRevival-Bestenliste: Top-Spieler des Hardcore-PvP-Servers, gewertet nach Kills, Wiederbelebungen und Toden – live und ohne JavaScript einsehbar.">
+    <link rel="canonical" href="https://hardrevival.net/leaderboard/" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Bestenliste | HardRevival" />
+    <meta property="og:description" content="Die globale HardRevival-Bestenliste: Top-Spieler des Hardcore-PvP-Servers, gewertet nach Kills, Wiederbelebungen und Toden." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hardrevival.net/leaderboard/" />
+    <meta property="og:image" content="https://hardrevival.net/images/og/hardrevival.webp" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:site_name" content="HardRevival" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bestenliste | HardRevival" />
+    <meta name="twitter:description" content="Die globale HardRevival-Bestenliste: Top-Spieler gewertet nach Kills, Wiederbelebungen und Toden." />
+    <meta name="twitter:image" content="https://hardrevival.net/images/og/hardrevival.webp" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://api.hardrevival.net" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../index.css">
@@ -19,6 +37,12 @@
             <h1 class="page-title"><i class="fa-solid fa-trophy" style="color: #f59e0b;"></i> Globale Rangliste</h1>
             <p class="page-subtitle">Die Top-Spieler, gewertet nach dem vergossenen Blut.</p>
         </div>
+
+        <noscript>
+            <p style="text-align:center; color:#a1a1aa; padding:1rem;">
+                Die Live-Rangliste benötigt JavaScript. Aktiviere JavaScript, um Kills, Wiederbelebungen und Tode aller Spieler zu sehen.
+            </p>
+        </noscript>
 
         <div id="loader" class="loader">
             <i class="fa-solid fa-spinner fa-spin"></i>
@@ -42,9 +66,34 @@
         </div>
     </main>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://hardrevival.net/leaderboard/#webpage",
+          "url": "https://hardrevival.net/leaderboard/",
+          "name": "Bestenliste",
+          "description": "Globale Rangliste des HardRevival Minecraft-Servers, gewertet nach Kills, Wiederbelebungen und Toden.",
+          "inLanguage": "de",
+          "isPartOf": { "@id": "https://hardrevival.net/#website" },
+          "dateModified": "2026-10-09"
+        },
+        {
+          "@type": "Dataset",
+          "name": "HardRevival Spielstatistiken",
+          "description": "Live-Statistiken der HardRevival-Spieler: Kills, Wiederbelebungen und Tode aus Hardcore-PvP-Kämpfen.",
+          "url": "https://hardrevival.net/leaderboard/",
+          "creator": { "@id": "https://hardrevival.net/#organization" },
+          "isAccessibleForFree": true
+        }
+      ]
+    }
+    </script>
+
     <script src="/src/menue/index.js"></script>
     <script src="/src/footer/index.js"></script>
     <script src="index.js"></script>
 </body>
-</html>
 </html>
