@@ -8,7 +8,8 @@ HardRevival ist ein deutscher Minecraft-Hardcore-PvP-Server. Spieler kämpfen
 mit permadeath-Einsätzen: ein seltener "Life Saver"-Gegenstand kann das letzte
 Leben retten, beim Tod ohne Life Saver hinterlässt der Spieler eine
 Todes-Struktur mit seinem Kopf als Trophäe, und Mitspieler können Gefallene
-durch ein Wiederbelebungs-Ritual zurückholen. Betreiber: NeoFoxi.
+durch ein Wiederbelebungs-Ritual zurückholen. Betreiber: NeoFoxi
+(https://neofoxi.net).
 
 ## Wichtige Seiten
 

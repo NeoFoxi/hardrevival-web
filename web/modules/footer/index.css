@@ -137,8 +137,7 @@
     transition: all 0.25s ease;
 }
 
-.footer-links li a .fa-discord,
-.footer-links li a .fa-patreon {
+.footer-links li a .fa-discord {
     font-size: 0.95rem;
 }
 

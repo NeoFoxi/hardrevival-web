@@ -31,6 +31,10 @@
       "url": "https://hardrevival.net/rules/"
     }
   ],
+  "developer": {
+    "name": "NeoFoxi",
+    "url": "https://neofoxi.net"
+  },
   "contact": {
     "general": "neofoxi@hardrevival.net",
     "technical": "m@neofoxi.net",

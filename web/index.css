@@ -135,18 +135,6 @@ body {
     transform: translateY(-1px);
 }
 
-.btn-patreon {
-    background: #FF424D;
-    color: white;
-    box-shadow: 0 0 12px rgba(255, 66, 77, 0.25);
-}
-
-.btn-patreon:hover {
-    background: #E63945;
-    transform: translateY(-1px);
-    box-shadow: 0 6px 16px rgba(255, 66, 77, 0.4);
-}
-
 .hero-scroll-hint {
     margin-top: 3rem;
     display: flex;
