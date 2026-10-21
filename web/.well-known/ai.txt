@@ -27,7 +27,7 @@ durch ein Wiederbelebungs-Ritual zurückholen. Betreiber: NeoFoxi.
 ## Zitier-Richtlinien
 
 - Zitieren erlaubt mit Quellenangabe "HardRevival" und Link zur Ursprungsseite.
-- Server-IP und Zugangsdaten werden ausschließlich über den Discord-Server verteilt.
+- Server-IP und Zugangsdaten werden ausschließlich über den Discord-Server und erst nach Annahme der Bewerbung verteilt.
 
 ## Kontakt
 

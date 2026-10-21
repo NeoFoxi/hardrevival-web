@@ -1,6 +1,6 @@
 async function loadNavbar() {
     try {
-        const response = await fetch('/src/menue/index.html');
+        const response = await fetch('/modules/menue/index.html');
         if (!response.ok) throw new Error('Navbar konnte nicht geladen werden');
         const navbarHtml = await response.text();
         document.getElementById('navbar-container').innerHTML = navbarHtml;

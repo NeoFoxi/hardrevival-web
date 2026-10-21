@@ -1,6 +1,6 @@
 async function loadFooter() {
     try {
-        const response = await fetch('/src/footer/index.html');
+        const response = await fetch('/modules/footer/index.html');
         if (!response.ok) throw new Error('Footer konnte nicht geladen werden');
         const footerHtml = await response.text();
 

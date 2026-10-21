@@ -28,7 +28,7 @@ plus the server rules. The project is run by NeoFoxi.
 ## Community and profiles
 - [Discord](https://hardrevival.net/discord): Community server and support.
 - [GitHub](https://neofoxi.net/github): Source code and open projects.
-- [Patreon](https://neofoxi.net/patreon): Membership and support.
+- [Patreon](https://neofoxi.net/patreon): Support the project.
 
 ## Related llms.txt
 - [NeoFoxi llms.txt](https://neofoxi.net/llms.txt): machine-readable index for the developer behind HardRevival.
